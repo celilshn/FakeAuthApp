@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blackFragment">
+    <fragment
+        android:id="@+id/blackFragment"
+        android:name="com.cengcelil.basemvvmapp.BlackFragment"
+        android:label="black_fragment"
+        tools:layout="@layout/black_fragment" />
+    <fragment
+        android:id="@+id/whiteFragment"
+        android:name="com.cengcelil.basemvvmapp.WhiteFragment"
+        android:label="white_fragment"
+        tools:layout="@layout/white_fragment" />
+</navigation>
