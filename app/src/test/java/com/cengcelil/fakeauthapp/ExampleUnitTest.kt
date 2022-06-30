@@ -1,4 +1,4 @@
-package com.cengcelil.basemvvmapp
+package com.cengcelil.fakeauthapp
 
 import org.junit.Test
 

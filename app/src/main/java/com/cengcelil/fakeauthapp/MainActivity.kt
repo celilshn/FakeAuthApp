@@ -1,16 +1,9 @@
-package com.cengcelil.basemvvmapp
+package com.cengcelil.fakeauthapp
 
-import android.Manifest
-import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.content.ContextCompat
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import com.cengcelil.basemvvmapp.databinding.ActivityMainBinding
-import com.google.android.material.navigation.NavigationBarView
+import com.cengcelil.fakeauthapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

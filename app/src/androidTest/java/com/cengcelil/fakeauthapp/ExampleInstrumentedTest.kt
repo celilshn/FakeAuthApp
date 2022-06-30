@@ -1,4 +1,4 @@
-package com.cengcelil.basemvvmapp
+package com.cengcelil.fakeauthapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.cengcelil.basemvvmapp", appContext.packageName)
+        assertEquals("com.cengcelil.fakeauthapp", appContext.packageName)
     }
 }

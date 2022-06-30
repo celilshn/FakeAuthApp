@@ -1,4 +1,4 @@
-package com.cengcelil.basemvvmapp
+package com.cengcelil.fakeauthapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

@@ -6,12 +6,12 @@
     app:startDestination="@id/blackFragment">
     <fragment
         android:id="@+id/blackFragment"
-        android:name="com.cengcelil.basemvvmapp.BlackFragment"
+        android:name="com.cengcelil.fakeauthapp.BlackFragment"
         android:label="black_fragment"
         tools:layout="@layout/black_fragment" />
     <fragment
         android:id="@+id/whiteFragment"
-        android:name="com.cengcelil.basemvvmapp.WhiteFragment"
+        android:name="com.cengcelil.fakeauthapp.WhiteFragment"
         android:label="white_fragment"
         tools:layout="@layout/white_fragment" />
 </navigation>

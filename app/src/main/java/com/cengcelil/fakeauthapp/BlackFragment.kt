@@ -1,4 +1,4 @@
-package com.cengcelil.basemvvmapp
+package com.cengcelil.fakeauthapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,29 +6,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelStore
-import com.cengcelil.basemvvmapp.databinding.WhiteFragmentBinding
+import com.cengcelil.fakeauthapp.databinding.BlackFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class WhiteFragment : Fragment() {
+class BlackFragment : Fragment() {
 
-    private lateinit var viewModel: WhiteViewModel
-    private lateinit var b: WhiteFragmentBinding
+    private lateinit var viewModel: BlackViewModel
+    private lateinit var b: BlackFragmentBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        b = WhiteFragmentBinding.inflate(LayoutInflater.from(requireContext()))
-        viewModel = ViewModelProvider(this)[WhiteViewModel::class.java]
+        b = BlackFragmentBinding.inflate(LayoutInflater.from(requireContext()))
+        viewModel = ViewModelProvider(this)[BlackViewModel::class.java]
         return b.root
 
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
 
-
-}
+    }
