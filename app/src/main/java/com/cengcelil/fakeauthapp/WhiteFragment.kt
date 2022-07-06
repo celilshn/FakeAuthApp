@@ -1,5 +1,6 @@
 package com.cengcelil.fakeauthapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -27,6 +28,12 @@ class WhiteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        b.btSubmit.setOnClickListener {
+            startActivity(Intent(requireActivity(),MainActivity2::class.java))
+            requireActivity().finish()
+
+        }
+
     }
 
 

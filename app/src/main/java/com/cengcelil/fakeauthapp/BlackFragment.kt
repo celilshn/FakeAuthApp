@@ -26,6 +26,7 @@ class BlackFragment : Fragment() {
     ): View {
         b = BlackFragmentBinding.inflate(LayoutInflater.from(requireContext()))
         viewModel = ViewModelProvider(this)[BlackViewModel::class.java]
+
         return b.root
 
     }
@@ -35,7 +36,9 @@ class BlackFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         b.button2.setOnClickListener {
             startActivity(Intent(requireActivity(),MainActivity2::class.java))
+            requireActivity().finish()
 
         }
     }
+
     }
