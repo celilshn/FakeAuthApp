@@ -14,14 +14,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(ActivityMainBinding.inflate(layoutInflater).also { b = it }.root)
-
-        val map = HashMap<String, Int>()
         b.bottomNavigationView.setOnItemSelectedListener { item ->
             findNavController(R.id.nav_host_fragment).navigate(
                 when (item.itemId) {
-                    R.id.black -> R.id.blackFragment
-                    R.id.white -> R.id.whiteFragment
-                    else -> R.id.blackFragment
+                    R.id.account -> R.id.accountFragment
+                    R.id.account_splitted -> R.id.account_splitted_first
+                    R.id.card -> R.id.card_fragment
+                    else -> R.id.account_splitted_first
                 }
             )
             true

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:title="Black"
-        android:id="@+id/black"
-        android:icon="@color/black" />
-    <item
-        android:title="White"
-        android:id="@+id/white"
+        android:title="Card"
+        android:id="@+id/card"
         android:icon="@color/white" />
+    <item
+        android:title="Account"
+        android:id="@+id/account"
+        android:icon="@color/black" />
+
+    <item
+        android:title="Account Splitted"
+        android:id="@+id/account_splitted"
+        android:icon="@color/black" />
 </menu>

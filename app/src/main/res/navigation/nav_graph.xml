@@ -3,15 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/blackFragment">
+    app:startDestination="@id/card_fragment">
     <fragment
-        android:id="@+id/blackFragment"
-        android:name="com.cengcelil.fakeauthapp.BlackFragment"
+        android:id="@+id/card_fragment"
+        android:name="com.cengcelil.fakeauthapp.CardFragment"
         android:label="black_fragment"
-        tools:layout="@layout/black_fragment" />
+        tools:layout="@layout/card_fragment" />
     <fragment
-        android:id="@+id/whiteFragment"
-        android:name="com.cengcelil.fakeauthapp.WhiteFragment"
+        android:id="@+id/account_splitted_first"
+        android:name="com.cengcelil.fakeauthapp.AccountSplittedFirstFragment"
         android:label="white_fragment"
-        tools:layout="@layout/white_fragment" />
+        tools:layout="@layout/account_splitted_first">
+        <action
+            android:id="@+id/action_whiteFragment_to_whiteFragment2"
+            app:destination="@id/account_splitted_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/account_splitted_second"
+        android:name="com.cengcelil.fakeauthapp.AccountSplittedSecondFragment"
+        android:label="WhiteFragment2" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.cengcelil.fakeauthapp.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/account_fragment" />
 </navigation>

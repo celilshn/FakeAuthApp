@@ -6,8 +6,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
+
 @HiltViewModel
-class BlackViewModel @Inject constructor(
+class MainViewModel @Inject constructor(
     @ApplicationContext val context: Context
 ) : ViewModel() {
     // TODO: Implement the ViewModel

@@ -7,38 +7,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.cengcelil.fakeauthapp.databinding.BlackFragmentBinding
+import com.cengcelil.fakeauthapp.databinding.AccountSplittedSecondBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class BlackFragment : Fragment() {
+class AccountSplittedSecondFragment : Fragment() {
 
-    private lateinit var viewModel: BlackViewModel
-    private lateinit var b: BlackFragmentBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private lateinit var viewModel: MainViewModel
+    private lateinit var b: AccountSplittedSecondBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        b = BlackFragmentBinding.inflate(LayoutInflater.from(requireContext()))
-        viewModel = ViewModelProvider(this)[BlackViewModel::class.java]
-
+        b = AccountSplittedSecondBinding.inflate(LayoutInflater.from(requireContext()))
+        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         return b.root
 
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        b.button2.setOnClickListener {
+        b.btSubmit.setOnClickListener {
             startActivity(Intent(requireActivity(),MainActivity2::class.java))
             requireActivity().finish()
 
         }
-    }
 
     }
+
+
+}
